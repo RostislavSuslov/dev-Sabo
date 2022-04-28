@@ -1,0 +1,105 @@
+.review {
+    margin: 218px 0 156px;
+    &-title{
+        font-family: 'Prata';
+        font-size: 100px;
+        line-height: 1.36;
+        text-transform: uppercase;
+     
+      
+    }
+}
+
+.slider-container{
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+}
+
+.slider-review {
+    max-width: 1040px;
+    width: 100%;
+    background: url(assets/img/bg-slider-review.svg) center no-repeat, url(assets/img/slider-review-mark.png) left 90px no-repeat;
+    display: flex;
+    margin: 0 auto;
+    .slick-track {
+        padding: 84px 0;
+        margin: 15px 0;
+        min-height: 935px;
+    }
+
+    .slick-slide {
+        background: #fff;
+        position: relative;
+        margin: 0 35px;
+        padding: 40px;
+        min-height: 624px;
+        transition: 1s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            box-shadow: -67px 32px 150px #00000026;
+            box-shadow: 4px 5px 7px 0px #00000026, -3px 3px 7px 0px #00000026;
+        }
+
+        &.slick-current.slick-active {
+            margin-top: 140px;
+        }
+    }
+
+    &-icon {
+        width: 186px;
+        margin: -88px 0 96px auto;
+    }
+
+    &-text {
+        font-size: 26px;
+        line-height: 1.6;
+    }
+}
+
+.container-arrows{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 273px;
+    margin: 0 auto;
+    .btn {
+        position: absolute;
+        top: 60%;
+        right: -12px;
+        width: max-content;
+    }
+}
+
+.slick-arrow {
+    width: 100px;
+    height: 72px;
+    position: static;
+    background: url(assets/img/slider-arrow.svg) center no-repeat;
+    display: flex;
+    &:hover{
+        filter: $filter;
+    }
+    &::before{
+        display: none;
+    }
+}
+.slick-next.slick-arrow {
+    transform: rotate(180deg) translate(0, 35px);
+}
+ 
+.pagingInfo {
+    font-family: $prata;
+    font-size: 26px;
+    min-width: 72px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}

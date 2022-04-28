@@ -1,0 +1,12 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrap_page search-result">
+    @@include('templates/breadcrumbs.html')
+    <h1 class="page-title">Результаты поиска </h1>
+    <div class="container">
+        <div class="search-query">Запрос:  <b>из США</b> </div>
+        @@include('templates/blog-grid.html')
+        @@include('templates/pagination.html')
+    </div>
+</main>
+@@include('templates/footer.html')

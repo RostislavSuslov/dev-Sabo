@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+    .breadcrumb {
+        margin-top: 0;
+        padding: 25px 12px 15px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        margin: 24px -24px 24px;
+        grid-template-rows: 1fr;
+    }
+
+    .blog-item {
+        padding: 0 25px;
+        margin-bottom: 36px;
+    }
+
+    .blog-item-title {
+        margin-bottom: 6px;
+    }
+
+    .wp-pagenavi {
+        font-size: 18px;
+       
+        .current {
+            font-size: 24px;
+        }
+
+        .first,
+        .previouspostslink,
+        .nextpostslink,
+        .last {
+            padding: 0 !important;
+            font-size: 30px;
+            top: 1px;
+            position: relative;
+        }
+        a{
+            margin: 2px 4px;
+        }
+       .page {
+           padding: 3px;
+       }
+    }
+    .magazine__grid-item {
+        width: 50%;
+    }
+}

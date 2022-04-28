@@ -1,0 +1,18 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrap_page page-blog">
+    
+    @@include('templates/breadcrumbs.html') 
+    <div class="banner-template">
+        <div class="container">
+            <div class="text-box"><h1>HОВОСТИ</h1></div>
+            <div class="img-box"><img src="assets/img/blog-first-screen.svg" class="img-fluid" alt="banner-mission"></div>
+        </div>
+    </div>
+    <div class="container">
+        @@include('templates/blog-nav.html')
+        @@include('templates/blog-grid.html')
+        <div class="decoration-right-square"></div>
+        @@include('templates/pagination.html')
+    </div>
+</main>@@include('templates/footer.html')

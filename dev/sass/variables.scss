@@ -1,0 +1,78 @@
+///fonts///
+
+ 
+
+$primary-color: #0164FF;
+$secondary-color:#EC2114;
+$title: #373737;
+$text: #151515;
+$textActive:#A6A6A6;
+
+$placeholder: #A6A6A6;
+/*grey*/
+ 
+
+$label-red: #F93838;
+$label-purpur: #8683EF;
+$label-green: #70D61F;
+
+
+$base1: #7c774d;
+$base2: #7c4d7c;
+$base3: #4d7c4d;
+
+$required: $primary-color;
+$error1: #af0a48;
+$error2: #af0a48;
+$error3: #8d0837;
+$main-color: #000;
+
+$font-main-color: #000;
+
+
+$prata: 'Prata-Regular';
+///screen///
+$screen-xxs:                  320px;
+$screen-xs:                   480px;
+$screen-sm:                   768px;
+$screen-md:                   992px;
+$screen-lg:                   1200px;
+$screen-xl:                   1920px;
+
+//retina
+
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
+
+
+
+
+/*   <Breadcrumbs/>   */
+$breadcrumbs-slash: $secondary-color;
+$breadcrumbs-link: #000;
+$breadcrumbs-link-hover:$primary-color;
+$breadcrumbs-last-child: #B0B0B0;
+
+
+
+/*   <Muve-top/>   */
+$muve-top-background: $primary-color;
+$muve-top-color: #fff;
+
+
+
+
+$filter: invert(24%) sepia(68%) saturate(4359%) hue-rotate(215deg) brightness(103%) contrast(107%);
+
+
+
+@mixin blue-shadow {
+    content: "";
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    background: #0164FF;
+    opacity: 0.051;
+    border-radius: 50%;
+    filter: blur(85px);
+    z-index: -1;
+}

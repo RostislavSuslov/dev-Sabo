@@ -1,0 +1,57 @@
+.cooperate {
+    margin-top: 188px;
+    &-row {
+        display: flex;
+
+        .text-box {
+            max-width: 1030px;
+        }
+    }
+    .btn-box {
+        margin-top: 48px;   
+    }
+    &-title {
+        font-family: $prata;
+        font-size: 100px;
+        line-height: 1.3;
+        text-transform: uppercase;
+
+    }
+
+    &-decoration {
+        height: 25vw;
+        background: url(assets/img/border-cooperate.svg) center no-repeat;
+        background-size: 100%;
+        background-position: 0vw -7vw;
+        margin-top: -75px;
+    }
+
+    &-content {
+
+        p,
+        b {
+            font-size: 26px;
+            line-height: 1.6
+        }
+    }
+}
+
+.img-box.cooperate-1 {
+    margin-bottom: 110px;
+}
+.img-box.cooperate-2 {
+    padding: 7%;
+    margin-top: 15%;
+}
+
+.cooperate-decoration {
+    display: flex;
+   
+
+    .img-box.cooperate-3 {
+        margin: 0 auto;
+        img{
+            margin: 3vw 0 0 22vw;
+        }
+    }
+}

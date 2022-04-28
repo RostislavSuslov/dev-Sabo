@@ -1,0 +1,63 @@
+.banner-template {
+    margin: 24px 0 120px;
+
+    >.container {
+        display: flex;
+    }
+
+    .text-box,
+    .img-box {
+        max-width: 50%;
+        width: 100%
+    }
+
+    .img-box {
+        padding: 15px;
+        z-index: -1;
+    }
+
+    .text-box {
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 1.6;
+        }
+    }
+
+    h1 {
+        font-family: $prata;
+        font-size: 120px;
+        line-height: 1.35;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        margin-top: 24px;
+    }
+
+  
+}
+
+
+
+.team {
+    margin-bottom: 264px;
+
+    &__title {
+
+        font-family: $prata;
+        font-size: 50px;
+        line-height: 1.35;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+    }
+
+    &__description {
+        margin-top: 60px;
+        font-size: 26px;
+        max-width: 1127px;
+    }
+}

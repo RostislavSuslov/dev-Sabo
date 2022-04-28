@@ -1,0 +1,25 @@
+img {
+
+    &.alignleft,
+    &.alignright {
+        max-width: 49%;
+    }
+
+    &.alignleft {
+        margin: 0 30px 25px 0;
+        float: left;
+    }
+
+    &.alignright {
+        margin: 0 0 25px 30px;
+        float: right;
+    }
+
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}

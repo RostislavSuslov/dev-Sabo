@@ -1,0 +1,96 @@
+$servicesMarginLeft: 200px;
+
+.services {
+    position: relative;
+
+    .nav-tabs {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        max-width: 967px;
+        margin-bottom: 48px;
+        margin-left: $servicesMarginLeft;
+        margin-right: 30px;
+    }
+
+    .tab-content {
+        max-width: 1083px;
+        margin-left: $servicesMarginLeft;
+        margin-right: 30px;
+
+        .btn-box {
+            margin-top: 36px;
+        }
+    }
+
+    .nav-item {
+        &:before {
+            display: none;
+        }
+    }
+
+    .nav-link {
+        font-family: $prata;
+        font-size: 50px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        color: $primary-color;
+        border: none;
+        border-bottom: 1px solid transparent;
+        padding: 0;
+
+        &.active {
+            background-color: transparent;
+        }
+    }
+
+    .tab-content {
+        font-size: 26px;
+        line-height: 1.6;
+     
+    }
+
+    &-decoration {
+        z-index: -1;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 55vw;
+            height: 55vw;
+            background: url(assets/img/decoration-services.png) center no-repeat;
+            top: -65vw;
+            right: -27vw;
+        }
+    }
+
+    &-map-box {
+        margin-top: 100px;
+        position: relative;
+    }
+}
+
+#forwarding-tab {
+    color: $primary-color;
+
+    &.active {
+        border-bottom: 1px solid $primary-color;
+    }
+
+    &:hover {
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+#fulfilment-tab {
+    color: $secondary-color;
+
+    &.active {
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    &:hover {
+        border-bottom: 1px solid $secondary-color;
+    }
+}

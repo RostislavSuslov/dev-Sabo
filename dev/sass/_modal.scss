@@ -1,0 +1,230 @@
+.modal-open .modal {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    max-width: 890px;
+    min-height: calc(100% - (5rem * 2));
+}
+
+.modal-header {
+    border: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    .nice_Select {
+        height: 48px;
+        background-color: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        width: 100%;
+        background: url('assets/img/select_close.png') calc(100% - 15px) center no-repeat!important;
+        &.open {
+            background: url('assets/img/select_open.png') calc(100% - 15px) center no-repeat #f9f9f9 !important;
+        }
+        .list{
+            width: 100%;
+            background: #f9f9f9;
+            li.option {
+                height: 42px;
+                &:before{
+                    display: none;
+                }
+                &:hover {
+                    background-color: #188de7;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+    padding: 58px 107px 36px;
+    position: relative;
+    p {
+        margin-top: 10px;
+    }
+}
+
+textarea {
+    width: 100%;
+    min-height: 170px;
+    margin: 0 0 24px 0;
+}
+
+input::placeholder{
+    color: #A6A6A6;
+}
+
+input[type="file"] {
+    display: none;
+
+    &+label {
+        margin-left: 15px;
+        cursor: pointer;
+        margin: 5px 0 25px 15px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none !important;
+    z-index: 1;
+}
+
+::-webkit-input-placeholder {
+    color: $placeholder !important;
+}
+
+::-moz-placeholder {
+    color: $placeholder !important;
+}
+
+:-ms-input-placeholder {
+    color: $placeholder !important;
+}
+ 
+input:focus-visible {
+    outline: none;
+}
+
+#ajaxModal,
+#support {
+    input.btn.btn-secondary {
+        margin-left: auto;
+        display: flex;
+
+    }
+}
+
+.form-subscribe,
+.form-callback {
+    .modal-header {
+        border: none;
+        padding-bottom: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    .modal-content {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    div.col-md-6 {
+        p.col-md-12 {
+            &:first-child {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+.form-callback {
+    div.col-md-6 {
+        &>.img-fluid {
+            height: 100%;
+        }
+        p.col-md-12 {
+            &:first-child {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+.form-one-click {
+    .modal-body {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        max-width: 530px;
+        margin: 0 auto;
+        min-height: calc(100% - (5rem * 2));
+    }
+}
+ 
+/* === BEGIN INPUTs === */
+ 
+.wpcf7-not-valid,
+.error-input,
+input.required.error {
+   
+    border-radius: 0;
+    height: 48px;
+}
+
+.wpcf7-not-valid-tip,
+.error-txt,
+.error {
+    color: $error1;
+    font-size: 85%;
+    display: block;
+}
+
+.required {
+    display: inline-block;
+    color: $required;
+    line-height: 1.2;
+    vertical-align: top;
+}
+.modal-header{
+    .btn-close {
+        padding: 0.5rem 0.5rem;
+        box-shadow: none;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        z-index: 1;
+    }
+} 
+ 
+.modal-title {
+   font-size: 50px;
+   font-family: $prata;
+   text-align: center;
+   width: 100%;
+   margin-bottom: 18px; 
+}
+
+.modal-body{
+    .form-group {
+        padding-bottom: 24px;
+    }
+}
+
+.form-control, input[type]:not(.btn), textarea, select {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    padding: 15.6px 21px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 22px;
+    line-height: 1.4;
+    width: 100%;
+    color: #0c0c0c;
+    border-radius: 0;
+}
+
+.modal-footer {
+    justify-content: center;
+}

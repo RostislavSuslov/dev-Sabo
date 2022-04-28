@@ -1,0 +1,96 @@
+/* === BEGIN wp_pagenavi === */
+.more-peoducts {
+    margin: 80px auto 40px;
+    border: 1px solid $primary-color;
+    width: 180px;
+    height: 36px;
+    font-size: 16px;
+    padding-right: 27px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./assets/img/icon_download.png') no-repeat 150px !important;
+
+    &:hover {
+        text-decoration: none;
+        color: $text;
+        background: url('./assets/img/icon_download.png') no-repeat 150px $primary-color !important;
+    }
+}
+
+.wp-pagenavi {
+
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 0 auto 95px;
+    position: relative;
+
+    a {
+        text-decoration: none;
+        margin: 2px 10px;
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .first {
+        padding: 5px !important;
+        font-size: 36px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .last {
+        padding: 5px !important;
+        font-size: 36px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .previouspostslink {
+        font-size: 36px;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .nextpostslink {
+        font-size: 36px;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .first,
+    .last,
+    .previouspostslink,
+    .nextpostslink,
+    .page,
+    .current {
+        padding: 3px 5px;
+    }
+
+    .current {
+        color: $primary-color;
+
+    }
+    .extend {
+        cursor: default;
+    }
+    
+    
+}
+
+/* === END wp_pagenavi === */

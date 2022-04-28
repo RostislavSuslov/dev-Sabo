@@ -1,0 +1,167 @@
+/*article-page*/
+.block-social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+
+    .socials {
+        margin-left: 30px;
+    }
+}
+
+.post-item {
+    h1 {
+        margin-top: 90px;
+    }
+}
+
+table {
+    width: 100%;
+    overflow-x: auto;
+
+    td {
+        border: 1px solid;
+        padding: 28px 15px;
+    }
+
+    tr {
+        font-size: 26px;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+
+        &:first-child {
+            background-color: #E5EFFF;
+        }
+    }
+}
+
+.color-grey {
+    color: #a6a6a6;
+}
+
+.attention {
+    padding: 90px 60px 80px 100px;
+    background: url(assets/img/bg-question.svg) left center no-repeat #fff;
+    margin: 84px 0;
+
+    &-title {
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 36px;
+        line-height: 1.3;
+        color: #EC2114;
+        padding-left: 60px;
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34' fill='none'%3E%3Cpath d='M31.9591 23.0916L21.0933 5.07164C20.6539 4.3843 20.0485 3.81863 19.333 3.4268C18.6175 3.03497 17.8149 2.82959 16.9991 2.82959C16.1833 2.82959 15.3807 3.03497 14.6651 3.4268C13.9496 3.81863 13.3443 4.3843 12.9049 5.07164L2.03908 23.0916C1.65524 23.7315 1.44662 24.4611 1.43418 25.2071C1.42175 25.9532 1.60595 26.6894 1.96825 27.3416C2.38713 28.0758 2.99343 28.6857 3.7252 29.1088C4.45697 29.5319 5.28796 29.7532 6.13325 29.75H27.8649C28.7047 29.7589 29.5319 29.5462 30.2632 29.1333C30.9944 28.7205 31.6038 28.122 32.0299 27.3983C32.4029 26.7392 32.5929 25.9925 32.5805 25.2353C32.568 24.4782 32.3535 23.7381 31.9591 23.0916ZM29.5508 25.9958C29.3805 26.2885 29.1334 26.529 28.8362 26.6913C28.5391 26.8536 28.2032 26.9315 27.8649 26.9166H6.13325C5.79498 26.9315 5.45908 26.8536 5.16192 26.6913C4.86477 26.529 4.61768 26.2885 4.44742 25.9958C4.32308 25.7804 4.25762 25.5362 4.25762 25.2875C4.25762 25.0388 4.32308 24.7945 4.44742 24.5791L15.3274 6.54497C15.5229 6.28672 15.7756 6.07728 16.0656 5.93308C16.3557 5.78887 16.6752 5.71383 16.9991 5.71383C17.323 5.71383 17.6425 5.78887 17.9325 5.93308C18.2226 6.07728 18.4752 6.28672 18.6707 6.54497L29.5366 24.565C29.6657 24.7808 29.7351 25.027 29.7376 25.2785C29.7401 25.5299 29.6756 25.7775 29.5508 25.9958Z' fill='%23EC2114'/%3E%3Cpath d='M16.9987 24.0833C17.7811 24.0833 18.4154 23.4491 18.4154 22.6667C18.4154 21.8843 17.7811 21.25 16.9987 21.25C16.2163 21.25 15.582 21.8843 15.582 22.6667C15.582 23.4491 16.2163 24.0833 16.9987 24.0833Z' fill='%23EC2114'/%3E%3Cpath d='M16.9987 11.3333C16.623 11.3333 16.2626 11.4825 15.997 11.7482C15.7313 12.0139 15.582 12.3742 15.582 12.7499V18.4166C15.582 18.7923 15.7313 19.1526 15.997 19.4183C16.2626 19.684 16.623 19.8332 16.9987 19.8332C17.3744 19.8332 17.7348 19.684 18.0004 19.4183C18.2661 19.1526 18.4154 18.7923 18.4154 18.4166V12.7499C18.4154 12.3742 18.2661 12.0139 18.0004 11.7482C17.7348 11.4825 17.3744 11.3333 16.9987 11.3333Z' fill='%23EC2114'/%3E%3C/svg%3E");
+    }
+
+    &-text {
+        font-size: 26px;
+        line-height: 1.6;
+    }
+}
+
+.question {
+    @extend .attention;
+
+    &-title {
+        @extend .attention-title;
+        color: #000;
+        padding-top: 52px;
+        margin-top: -52px;
+        background-position: 0 0;
+        background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='47' viewBox='0 0 54 47' fill='none'%3E%3Cpath d='M13.2816 47C9.20388 47 5.94175 45.5494 3.49515 42.6482C1.16505 39.6309 0 35.7432 0 30.9852C0 24.4864 1.74757 18.6259 5.24272 13.4037C8.85437 8.06543 14.3301 3.59753 21.6699 0L23.5922 2.78518C20.0971 4.87407 16.8932 7.83333 13.9806 11.663C11.1845 15.3765 9.78641 19.1481 9.78641 22.9778C9.78641 24.0222 10.0777 24.8926 10.6602 25.5889C11.2427 26.1691 12.1165 26.4593 13.2816 26.4593C16.1942 26.4593 18.6408 27.5037 20.6214 29.5926C22.7184 31.5654 23.767 34.0025 23.767 36.9037C23.767 39.8049 22.7184 42.242 20.6214 44.2148C18.6408 46.0716 16.1942 47 13.2816 47ZM43.5146 47C39.4369 47 36.1748 45.5494 33.7282 42.6482C31.3981 39.6309 30.233 35.7432 30.233 30.9852C30.233 24.4864 31.9806 18.6259 35.4757 13.4037C39.0874 8.06543 44.5631 3.59753 51.9029 0L53.8252 2.78518C50.3301 4.87407 47.1262 7.83333 44.2136 11.663C41.4175 15.3765 40.0194 19.1481 40.0194 22.9778C40.0194 24.0222 40.3107 24.8926 40.8932 25.5889C41.4757 26.1691 42.3495 26.4593 43.5146 26.4593C46.4272 26.4593 48.8738 27.5037 50.8544 29.5926C52.9515 31.5654 54 34.0025 54 36.9037C54 39.8049 52.9515 42.242 50.8544 44.2148C48.8738 46.0716 46.4272 47 43.5146 47Z' fill='%23151515'/%3E%3C/svg%3E");
+    }
+
+    &-text {
+        @extend .attention-text;
+    }
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    color: #0F0F0F;
+    margin: 96px -15px;
+
+    &__next,
+    &__prev {
+        display: flex;
+        max-width: 550px;
+        padding: 0 15px;
+        color: #000;
+        text-decoration: none;
+        line-height: 1.6;
+
+        min-height: 56px;
+        align-items: center;
+
+        &:hover {
+            color: #000;
+            text-decoration: none;
+            filter: $filter;
+        }
+    }
+
+    &__arrow {
+        min-width: 85px;
+        width: 100px;
+        height: 72px;
+        background: url(assets/img/slider-arrow.svg) center no-repeat;
+    }
+
+    &__prev {
+        .post-nav__arrow {
+            margin-right: 25px;
+        }
+    }
+
+    &__next {
+        text-align: right;
+
+        .post-nav__arrow {
+            margin-left: 25px;
+            background: url(assets/img/slider-arrow-right.svg) center no-repeat;
+ 
+        }
+    }
+}
+
+.page-article {
+    .decoration-right-square {
+        &:before {
+            right: 0;
+            left: -30vw;
+        }
+    }
+
+    .blog-grid {
+
+        grid-template-rows: 1fr;
+    }
+}
+
+.related-posts {
+    margin-top: 170px;
+    margin-bottom: 122px;
+
+    .related-posts__title {
+        font-family: $prata;
+        font-size: 50px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 56px;
+    }
+}
+
+/**/

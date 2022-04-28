@@ -1,0 +1,35 @@
+@media screen and (max-width: 1199px) {
+    .modal-search {
+        .modal-header {
+            .btn-close {
+                 right: 102px;
+             }
+        } 
+        .modal-content {
+            padding: 58px 100px;
+        }
+    }
+
+    .img-box.cooperate-2 {
+        display: none;
+    }
+
+    .additional-services__list-item {
+        font-size: 20px;
+    }
+
+
+    .why-are-we{
+        .custom-link{
+            font-size: 18px;
+        }
+        .nav-item {
+
+            .nav-link {
+         
+                padding: 0 15px 12px 55px;
+         
+            }
+        } 
+    } 
+}

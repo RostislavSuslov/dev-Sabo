@@ -1,0 +1,20 @@
+.paralax-container {
+    position: relative;
+    overflow: hidden;
+    height: 176px;
+    margin: 36px auto;
+}
+
+.right-move {
+    position: absolute;
+    right: 0;
+    top:0;
+    white-space: nowrap;
+    transition: 0.4s linear;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1.35;
+    color: #DCE7EF;
+}

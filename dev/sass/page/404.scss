@@ -1,0 +1,19 @@
+/*404*/
+.page-404 {
+    text-align: center;
+    padding-bottom: 200px;
+    &__title{
+        font-family: $prata;
+        font-size: 15vw;
+      
+    }
+
+    &__subtitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height:1.6;
+        margin-bottom: 24px;
+    }
+}

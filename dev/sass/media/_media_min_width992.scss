@@ -1,0 +1,52 @@
+@media (min-width: 1025px) {
+    #hamburger {
+        &:hover {
+            span {
+                &:nth-child(1) {
+                    top: -2px;
+                    -webkit-transition: .20s ease-in-out;
+                    -moz-transition: .20s ease-in-out;
+                    -o-transition: .20s ease-in-out;
+                    transition: .20s ease-in-out;
+                }
+
+                &:nth-child(2) {
+                    width: 100%;
+                }
+
+                &:nth-child(3) {
+                    top: 30px;
+                    -webkit-transition: .16s ease-in-out;
+                    -moz-transition: .16s ease-in-out;
+                    -o-transition: .16s ease-in-out;
+                    transition: .16s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .services {    
+        &-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }   
+    
+    .responsive-tabs .nav-tabs {
+        display: flex;
+    }
+
+    .responsive-tabs .card {
+        border: none;
+    }
+
+    .responsive-tabs .card .card-header {
+        display: none;
+    }
+
+    .responsive-tabs .card .collapse {
+        display: block;
+    }
+}
+ 

@@ -1,0 +1,9 @@
+.banner-template{
+    &.img-left{
+        .img-box {
+            z-index: -1;
+            order: -1;
+            margin-right: 124px;
+        }
+    }
+} 
